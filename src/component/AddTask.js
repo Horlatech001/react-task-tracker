@@ -6,14 +6,12 @@ const AddTask = ({ onAdd }) => {
   const onSubmit = (e) => {
     e.preventDefault();
 
-    if (!text) {
-      alert("Please add a task!");
-      return;
+    if (text !== "" && day !== "") {
+      onAdd({ text, day, remainder });
+      setText("");
+      setDay("");
+      setRemainder(false);
     }
-    onAdd({ text, day, remainder });
-    setText("");
-    setDay("");
-    setRemainder(false);
   };
   return (
     <form className="add-form" onSubmit={onSubmit}>

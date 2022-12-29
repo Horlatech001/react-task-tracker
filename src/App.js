@@ -15,14 +15,14 @@ const App = () => {
     },
     {
       id: 2,
-      text: "Implement Coding",
-      day: "Feb 15th at 2:30pm",
+      text: "Learn React Framework",
+      day: "Dec 29th at 12:30pm",
       remainder: false,
     },
     {
       id: 3,
       text: "Go to the hub",
-      day: "Feb 5th at 2:30pm",
+      day: "Oct 5th at 2:00pm",
       remainder: true,
     },
   ]);
